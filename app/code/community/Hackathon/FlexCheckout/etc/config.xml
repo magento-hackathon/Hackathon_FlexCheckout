@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Hackathon_FlexCheckout>
+            <version>1.0.0</version>
+        </Hackathon_FlexCheckout>
+    </modules>
+    <global>
+        <blocks>
+            <flexcheckout>
+                <class>Hackathon_FlexCheckout_Block</class>
+            </flexcheckout>
+        </blocks>
+        <helpers>
+            <flexcheckout>
+                <class>Hackathon_FlexCheckout_Helper</class>
+            </flexcheckout>
+        </helpers>
+        <models>
+            <flexcheckout>
+                <class>Hackathon_FlexCheckout_Model</class>
+            </flexcheckout>
+        </models>
+    </global>
+    <frontend>
+        <routers>
+            <checkout>
+                <args>
+                    <modules>
+                        <Hackathon_FlexCheckout after="Mage_Checkout">Hackathon_FlexCheckout</Hackathon_FlexCheckout>
+                    </modules>
+                </args>
+            </checkout>
+        </routers>
+    </frontend>
+</config>
